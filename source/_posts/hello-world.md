@@ -1,5 +1,6 @@
 ---
 title: 欢迎来到我的博客
+cover: https://i0.hdslb.com/bfs/archive/5a86d27189151ddfb72f45c3cfa9217026886177.jpg@672w_378h_1c_!web-home-common-cover.avif
 ---
 欢迎来到我的博客，这是一篇默认文章。
 
