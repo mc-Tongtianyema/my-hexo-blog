@@ -1,6 +1,6 @@
 ---
 title: 测试
-cover: /img/68c2cf094b5ed0a329dcf8f5c4b20011.png
+top_img: /img/68c2cf094b5ed0a329dcf8f5c4b20011.png
 ---
 # 这是标题
 > 这是引用

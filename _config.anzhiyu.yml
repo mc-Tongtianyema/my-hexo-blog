@@ -65,12 +65,17 @@ home_top:
       icon: anzhiyu-icon-file
   default_descr: 再怎么看我也不知道怎么描述它的啦！
 
-default_cover:
-  - https://imgapi.xl0408.top/index.php
-  - https://imgapi.xl0408.top/index.php
-  - https://imgapi.xl0408.top/index.php
-  - https://imgapi.xl0408.top/index.php
-  - https://imgapi.xl0408.top/index.php
-  - https://imgapi.xl0408.top/index.php
-  - https://imgapi.xl0408.top/index.php
+cover:
+  default_cover:
+    - https://imgapi.xl0408.top/index.php
+    - https://imgapi.xl0408.top/index.php
+    - https://imgapi.xl0408.top/index.php
+    - https://imgapi.xl0408.top/index.php
+    - https://imgapi.xl0408.top/index.php
+    - https://imgapi.xl0408.top/index.php
+    - https://imgapi.xl0408.top/index.php
   
+footer:
+  runtime:
+    enable: true
+    launch_time: 23/07/2026 19:00:00
