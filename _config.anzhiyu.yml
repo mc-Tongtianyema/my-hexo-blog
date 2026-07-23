@@ -54,6 +54,6 @@ home_top:
     - name: "其他"
       path: /categories/其他/
       shadow: var(--anzhiyu-shadow-gray)
-      class: gray
+      class: red
       icon: anzhiyu-icon-file
   default_descr: 再怎么看我也不知道怎么描述它的啦！
