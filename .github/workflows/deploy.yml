@@ -1,6 +1,11 @@
-name: Deploy Hexo Blog
+name: Hexo Deploy
 
-# 触发工作流的条件：当代码被推送到 main 分支时
+# 明确声明写入权限
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 on:
   push:
     branches:
@@ -8,45 +13,29 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest # 使用最新的Ubuntu环境运行
+    runs-on: ubuntu-latest
     steps:
-      # 步骤1：检出代码
-      # 拉取你的仓库代码到Action的运行环境中
-      - name: Checkout
-        uses: actions/checkout@v4 # 使用官方的checkout action
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          submodules: true # 如果使用了子模块
 
-      # 步骤2：设置Node.js环境
-      # 安装指定版本的Node.js，Hexo需要它来运行
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # 推荐使用一个较新的LTS版本
-          cache: 'npm' # 缓存npm依赖，加快后续构建速度
+          node-version: '20'
 
-      # 步骤3：安装依赖
-      # 安装Hexo CLI和项目package.json中定义的所有依赖
       - name: Install Dependencies
-
         run: |
-
-          npm install -g hexo-cli
           npm install
+          npm install hexo-cli -g
 
-      # 步骤4：生成静态文件
-      # 运行hexo generate命令，将博客源文件编译成HTML
-      - name: Generate Static Files
+      - name: Generate Hexo Site
         run: hexo generate
 
-      # 步骤5：部署到GitHub Pages
-      # 使用一个社区优化过的action来处理部署的复杂细节
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          # 这个token是GitHub Actions自动生成的，用于授权action向你的仓库写入内容
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # Hexo生成的静态文件默认放在public目录
-          publish_dir: ./public
-          # 将静态文件推送到一个专门的分支，如gh-pages。这是一种最佳实践，可以保持源码分支的干净
           publish_branch: gh-pages
-          # 部署时的commit信息
-          commit_message: 'Deploy: ${{ github.event.head_commit.message }}'
+          publish_dir: ./public
