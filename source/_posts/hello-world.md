@@ -1,38 +1,14 @@
 ---
-title: Hello World
+title: 欢迎来到我的博客
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+欢迎来到我的博客，这是一篇默认文章。
 
-## Quick Start
+这里可以用来记录日常学习、项目心得和生活随笔。
 
-### Create a new post
+## 接下来可以做什么
 
-``` bash
-$ hexo new "My New Post"
-```
+- 新建一篇文章
+- 调整主题样式
+- 继续补充内容
 
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+如果你愿意，也可以把这篇文章替换成你自己的第一篇正式文章。
