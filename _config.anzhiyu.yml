@@ -19,3 +19,11 @@ menu:
     关于本人: /about/ || anzhiyu-icon-paper-plane
     闲言碎语: /essay/ || anzhiyu-icon-lightbulb
     随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
+
+# Sponsor/reward
+reward:
+  enable: false
+  QR_code:
+    - img: https://你的二维码图片地址.png
+      link: https://你的支付链接
+      text: 微信
