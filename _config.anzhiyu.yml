@@ -40,7 +40,13 @@ home_top:
   title: 生活明朗
   subTitle: 万物可爱。
   siteText: anheyu.com
-  top_img: https://uapis.cn/api/v1/random/image?category=landscape&type=pc
+  index_img: https://uapis.cn/api/v1/random/image?category=landscape&type=pc
+  default_top_img: https://uapis.cn/api/v1/random/image?category=landscape&type=pc
+  archive_img: https://uapis.cn/api/v1/random/image?category=landscape&type=pc
+  tag_img: https://uapis.cn/api/v1/random/image?category=landscape&type=pc
+  tag_per_img: https://uapis.cn/api/v1/random/image?category=landscape&type=pc
+  category_img: https://uapis.cn/api/v1/random/image?category=landscape&type=pc
+  category_per_img: https://uapis.cn/api/v1/random/image?category=landscape&type=pc
   category:
     - name: "开发"
       path: /categories/编程/
