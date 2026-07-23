@@ -27,3 +27,26 @@ reward:
     - img: https://你的二维码图片地址.png
       link: https://你的支付链接
       text: 微信
+
+aside:
+  card_author:
+    enable: true
+    description: "我是通天野马，一个热爱生活的前端开发者，喜欢分享技术和生活点滴。"
+    name_link: "/about/"
+
+category:
+  -name: "开发"
+      path: /categories/编程/
+      shadow: var(--anzhiyu-shadow-blue)
+      class: blue
+      icon: anzhiyu-icon-code
+  -name: "生活"
+      path: /categories/生活/
+      shadow: var(--anzhiyu-shadow-green)
+      class: green
+      icon: anzhiyu-icon-heart
+  -name: "其他"
+      path: /categories/其他/
+      shadow: var(--anzhiyu-shadow-gray)
+      class: gray
+      icon: anzhiyu-icon-file
